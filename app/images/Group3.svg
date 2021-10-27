@@ -1,0 +1,26 @@
+<svg width="734" height="640" viewBox="0 0 734 640" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="734" height="640" fill="url(#pattern0)"/>
+<path d="M222 539L442.8 547L512 533.3V555L443.5 574.7L222 563.7V539Z" fill="#3595F6" fill-opacity="0.75"/>
+<path d="M223 538V513L443.3 516.3L513 513V533L443.7 546L223 538Z" fill="#3595F6" fill-opacity="0.75"/>
+<path d="M223 512V487H444H513V510L445 517L223 512Z" fill="#3595F6" fill-opacity="0.75"/>
+<path d="M223 488V463L444.3 459.3L512 466V488H444" fill="#3595F6" fill-opacity="0.75"/>
+<path d="M223 462V436L444.5 432.7L513 443.7V465L444 458.3L223 462Z" fill="#3595F6" fill-opacity="0.75"/>
+<path d="M222 435V411.3L443 399L514 422V443.3L443 431L222 435Z" fill="#3595F6" fill-opacity="0.75"/>
+<path d="M222 413V388L444.2 371.7L514 400.3V421L443.7 399.3L222 413Z" fill="#3595F6" fill-opacity="0.75"/>
+<path d="M222 388V363L444.5 342.7L514 379.3V400L442 371.3L222 388Z" fill="#3595F6" fill-opacity="0.75"/>
+<path d="M222 362V338L445 313.3L514 357.3V379L444.7 341L222 362Z" fill="#3595F6" fill-opacity="0.75"/>
+<path d="M222 337V313L444.5 284.3L514 335.3V356L443.7 313.7L222 337Z" fill="#3595F6" fill-opacity="0.75"/>
+<path d="M221 313V289L443.3 256L514 315.3V335L444 284.3L221 313Z" fill="#3595F6" fill-opacity="0.75"/>
+<path d="M222 288V264L443.2 229L513 293V314L444.3 255.7L222 288Z" fill="#3595F6" fill-opacity="0.75"/>
+<path d="M222 264V239L444.3 201L513 271.3V292L444 228L222 264Z" fill="#3595F6" fill-opacity="0.75"/>
+<path d="M222 238V213L442.8 169.3L513 248.3V271L444 197.7L222 238Z" fill="#3595F6" fill-opacity="0.75"/>
+<path d="M223 214V189L443 141L513 226V249L442.3 169.7L223 214Z" fill="#3595F6" fill-opacity="0.75"/>
+<path d="M222 189V164L441.8 112L513 204.3V227L443.3 140.7L222 189Z" fill="#3595F6" fill-opacity="0.75"/>
+<path d="M222 164V138L444 81.3L513 183V204L443.7 112.3L222 164Z" fill="#3595F6" fill-opacity="0.75"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0" transform="translate(-0.00408719) scale(0.0013624 0.0015625)"/>
+</pattern>
+<image id="image0" width="740" height="640" xlink:href="Group 3.svg/>
+</defs>
+</svg>

@@ -8,4 +8,345 @@
 
 /*медия всегда должны быть в низу */
 
+/*подключить шрифт на регуляр на том же сайте*/
+/*подумать сделать ли flex-direction: column или margim */
+
+
+.header {
+    background-color: #635854;
+    padding: 0px 80px;
+    max-width: 1345px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+    &__items {
+        display: flex;
+    }
+
+    &__item {
+        padding: 9px 0px;
+        margin-right: 80px;
+        max-width: 120px;
+        text-align: center;
+        transition: background-color 0.5s;
+        cursor: pointer;
+        &:hover {
+            background-color: #3596F5;
+        }
+    }
+
+    &__logo {
+        width: 130px;
+        height: 30px;
+    }
+
+    &__link {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+
+
+
+    }
+}
+
+.info {
+    text-align: end;
+
+    &__tel {
+        display: block;
+        margin-bottom: 5px;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+    }
+
+    &__link {
+        font-family: Roboto;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0em;
+        transition: background-color 0.5s;
+
+        &:focus {
+            outline: solid black;
+        }
+
+        &:hover {
+            background-color: #3596F5;
+        }
+
+        &:active {
+            color: #fb0909;
+        }
+    }
+}
+
+.main {
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    padding: 55px 0 95px 0;
+
+
+    &__info {
+        padding: 65px 0px 65px 120px;
+    }
+
+
+    &__title {
+        margin-bottom: 115px;
+        font-family: $Bebas;
+        font-weight: 400;
+        font-weight: normal;
+        text-align: center;
+        text-transform: uppercase;
+        color: #635854;
+        font-size: 37px;
+        line-height: 44px;
+        letter-spacing: 0em;
+    }
+
+
+}
+
+.counter-groop {
+
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__button {
+        height: 19px;
+        width: 32px;
+        border: none;
+        background-color: transparent;
+
+
+    }
+
+    &__number {
+        margin-bottom: 35px;
+        font-size: 124px;
+        color: #635854;
+        font-family: $Bebas;
+        font-weight: 400;
+
+
+
+
+    }
+
+    &__primary {
+        padding: 16px 36px;
+        background-color: #3596F5;
+        border-radius: 5px;
+        color: white;
+        border: none;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        margin-left: 20px;
+
+
+
+
+
+    }
+
+    .conter-up {
+        position: relative;
+        display: block;
+        margin-bottom: 35px;
+        transform: rotateX(180deg);
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 19px;
+            width: 32px;
+            background-image: url('../images/aroow-top.svg')
+        }
+    }
+
+
+
+
+    .conter-dawn {
+        position: relative;
+        display: block;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 19px;
+            width: 32px;
+            background-image: url('../images/aroow-bottom.svg')
+        }
+    }
+
+}
+
+path .current-floor {
+    /*для выделения этажа */
+    opacity: 1;
+}
+
+.home-image path {
+    opacity: 0;
+    transition: color 0.5s;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 1;
+    }
+
+
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    /*был 0*/
+    transform: scale(0);
+    /*окно сжимается до 0*/
+    transition: opacity 0.2s;
+}
+
+.is-open {
+    opacity: 1;
+    transform: scale(1);
+
+}
+
+.modal-dialog {
+    max-width: 1000px;
+    min-height: 565px;
+    flex-grow: 1;
+    background-color: white;
+    opacity: 0;
+    /*был 0*/
+    display: flex;
+    position: relative;
+    transition: transform 0.2s opacity 0.2s;
+    transform: translatey(-10%);
+    transition-delay: 0.2s;
+    /*задержка что бы сначало фон появлялся а потом окно  */
+}
+
+
+.is-open>.modal-dialog {
+    opacity: 1;
+    transform: translatey(0%);
+}
+
+.modal-image {
+    background-color: #EBEBEB;
+    width: 60%;
+    text-align: center;
+    padding: 50px;
+}
+
+.fleats path {
+    transition: color 0.5s;
+    cursor: pointer;
+    opacity: 0;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.modal__title {
+    font-family: $Bebas;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    margin-bottom: 25px;
+
+
+}
+
+.modal-info {
+    width: 40%;
+    padding: 50px 46px;
+
+}
+
+.flat-list {
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+
+.flat-item {
+    margin-bottom: 10px;
+}
+
+
+.flat-link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    color: #635854;
+    transition: color 0.5s;
+
+    &:hover {
+        color: #3596F5;
+        text-decoration: underline;
+        ;
+    }
+
+}
+
+.modal-alert {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+
+
+}
+
+.modal-close-button {
+    position: absolute;
+    top: 38px;
+    right: 27px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+}
+
+
 @import 'media';
